@@ -14,7 +14,16 @@
     name: 'app',
     components: {
       detail
-    }
+    },
+    data() {
+      return {
+        id: '',
+        name: ''
+      }
+    },
+    mounted() {
+      console.log(location.search)
+    },
   }
 </script>
 
