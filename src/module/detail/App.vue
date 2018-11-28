@@ -1,12 +1,11 @@
 <template>
   <div id="app">
-    <img src="./images/logo.png">
     <div>详情内容</div>
     <detail></detail>
     <hr />
-    <p>name: {{url.name}}</p>
+    <!-- <p>name: {{url.name}}</p>
      <p>id: {{url.id}}</p>
-     <p>color: {{url.color}}</p>
+     <p>color: {{url.color}}</p> -->
   </div>
 </template>
 
@@ -25,8 +24,7 @@
       }
     },
     mounted() {
-      this.url = urlArgs();
-      console.log(this.url)
+      urlArgs();
     }
   }
 </script>
