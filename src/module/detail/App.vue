@@ -3,13 +3,17 @@
     <img src="./images/logo.png">
     <div>详情内容</div>
     <detail></detail>
+    <hr />
+    <p>name: {{url.name}}</p>
+     <p>id: {{url.id}}</p>
+     <p>color: {{url.color}}</p>
   </div>
 </template>
 
 <script>
   import 'common/css/reset.css';
   import detail from 'components/detail/detail'
-
+  import urlArgs from '../../common/js/config'
   export default {
     name: 'app',
     components: {
@@ -17,13 +21,13 @@
     },
     data() {
       return {
-        id: '',
-        name: ''
+        url:{}
       }
     },
     mounted() {
-      console.log(location.search)
-    },
+      this.url = urlArgs();
+      console.log(this.url)
+    }
   }
 </script>
 

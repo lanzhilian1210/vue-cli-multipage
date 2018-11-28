@@ -13,7 +13,7 @@
     name: 'app',
     methods: {
       handleTab() {
-        location.href = './detail.html?id=123&name=abc';
+        location.href = './detail.html?id=123&name=abc&color=red';
       }
     }
   }
